@@ -1,0 +1,84 @@
+﻿body {
+    min-width:570px;
+}
+* {
+    padding:0; margin:0px 0 0 0;
+}
+#head,#foot,#bottom,#ContentPlaceHolderMain_head,#ContentPlaceHolderMain_foot,#ContentPlaceHolderMain_bottom {
+    margin:5px 0 5px 0;
+    position:relative;   
+}
+#right,#bottom,#ContentPlaceHolderMain_right,#ContentPlaceHolderMain_bottom {
+    background-color:#ddd;
+    /*border-radius:5px;*/
+    margin:5px 0 5px 0;
+    position:relative;   
+}
+#left, #middle, #right, #bottom, #foot,#ContentPlaceHolderMain_left,#ContentPlaceHolderMain_middle,#ContentPlaceHolderMain_right,#ContentPlaceHolderMain_bottom,#ContentPlaceHolderMain_foot {
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #aaa;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+#head,#ContentPlaceHolderMain_head{
+    height:70px;
+    width:100%;
+    margin:0 auto;
+}
+#foot,#ContentPlaceHolderMain_foot {
+    float:left;
+    height:auto;
+    left:1%;
+    width:96.5%;
+}
+#bottom,#ContentPlaceHolderMain_bottom{
+    float:left;
+    height:50px;
+    width:100%;
+}
+
+/*=========================================*/
+#finish {
+    display:none;
+    position:fixed;
+    top:40%;
+    height:auto;
+    left:10%;
+    right:10%;
+    text-align:center;
+}
+
+.time3 {
+    font:inherit;
+}
+/*=================================================*/
+
+ .effect{ position:relative;}
+	.effect:after{ content:'';
+					background:#fff;
+					position:absolute;
+					top:50%; bottom:0; left:40px; right:40px;
+					box-shadow:0 0 20px rgba(0,0,0,0.8);
+					-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+					-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+					-o-box-shadow:0 0 20px rgba(0,0,0,0.8);
+					border-radius:100px/10px;
+					z-index:-1;}
+.effect:before{ content:'';
+					background:#fff;
+					position:absolute;
+					top:50%; bottom:0; left:40px; right:40px;
+					box-shadow:0 0 20px rgba(0,0,0,0.8);
+					-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+					-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+					-o-box-shadow:0 0 20px rgba(0,0,0,0.8);
+					border-radius:100px/10px;
+					z-index:-1;}
+
+.icon-comment,.icon-heart,.icon-question-sign {
+    cursor:pointer;
+}

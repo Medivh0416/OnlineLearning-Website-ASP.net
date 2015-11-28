@@ -1,0 +1,47 @@
+﻿body {
+    padding-top:70px;
+    padding-bottom:0;
+    background:url(../images/crossword.png) fixed;
+}
+*{ 
+    margin:0; 
+    padding:0;
+}
+.btn_fix {
+    margin:8px 5px;
+}
+
+.footer {
+    height:auto;
+    margin-top:30px;
+}
+.footer a {
+    padding-right:10px;
+}
+#backTop {
+    display:block;
+    height:15px;
+    width:15px;
+    background-color:#555;
+    padding:17px;
+    position:fixed;
+    right:0px;
+    bottom:105px;
+    z-index:1000;
+    transition:background-color .5s;
+}
+
+#backTop:hover {
+    background-color:#ddd;
+}
+
+a {
+    /*color:#777777;*/
+}
+
+a:hover, a:focus {
+    text-decoration:none;    
+}
+label {
+    display:inline-block;
+}

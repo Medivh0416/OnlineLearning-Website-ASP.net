@@ -1,0 +1,42 @@
+﻿
+#menu,#left,#middle,#right{
+    background-color:#ddd;
+    margin:5px 0 5px 0;
+    position:relative;   
+}
+#left, #middle, #right{
+    padding:5px;
+}
+#menu
+{
+    float:left;
+    left:1%;
+    width:18%;
+    display:inline-block;
+}
+#head{
+    height:70px;
+    width:96.4%;left:-9px;
+    margin:0 auto;
+}
+#left {
+	float: left;
+    left:1%;
+	width: 25%;
+    top: 0px;
+    display:inline-block;
+}
+#middle {
+	float: left;
+    left:1%;
+	width: 25%;
+    top: 0px;
+    display:inline-block;
+}
+#right {
+	float: left;
+    left:1%;
+	width: 25%;
+    top: 0px;
+    display:inline-block;
+}

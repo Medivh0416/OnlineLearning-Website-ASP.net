@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontUser.master.cs"
+    Inherits="WebApplication1.FrontUser" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="gb2312">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <!--keywords description是搜索机首先访问的两个meta标签-->
+    <link rel="icon" href="../images/favicon.ico" />
+    <!--标题页图标，16*16像素-->
+    <title>理科思维引擎在线</title>
+    <link type="text/css" href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!--[if lte IE 6]>
+    <link type="text/css" href="bootstrap/bootstrap-ie6.css" rel="stylesheet" />
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link type="text/css" href="bootstrap/ie.css" rel="stylesheet" />
+    <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript" src="js/respond.js"></script>
+    <script type="text/javascript" src="bootstrap/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" href="../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link type="text/css" href="../css/csshake.css" rel="stylesheet" />
+    <link type="text/css" href="../css/global.css" rel="stylesheet" />
+    <style type="text/css">
+        html, body {
+            padding: 0 !important;
+        }
+
+        #main {
+            height: auto !important;
+            margin: 0 auto -60px;
+            padding-bottom: 20px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHeader" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%--===============================================================================--%>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index.html">LOGO</a>
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav">
+                        <li><a href="../homev3.aspx">首页</a></li>
+                        <li><a href="../msboard.aspx">智慧乐园</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">学业规划 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="../declare.aspx">高考志愿在线填报</a></li>
+
+                                <li><a href="#">职业倾向测试</a></li>
+                                <li><a href="#">高考改革动向信息</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">例题 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../study1.aspx">第一题</a></li>
+                                <li><a href="../study2.aspx">第二关</a></li>
+                                <li><a href="../study3.aspx">第三关</a></li>
+                                <li><a href="../study4-1.aspx">第四关第一问</a></li>
+                                <li><a href="../study4-2.aspx">第四关第二问</a></li>
+                                <li><a href="../study5.aspx">第五关</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">有疑问？ <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../guide.aspx">帮助中心</a></li>
+                                <li><a href="../guide.aspx#bhead">新手指导</a></li>
+                                <li class="divider"></li>
+                                <li class="nav-header">Nav header</li>
+                                <li><a href="#">解题思维引擎</a></li>
+                                <li><a href="#">数学解题在线</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../card.aspx">题友论坛</a></li>
+                                <li class="divider"></li>
+                                <li><a href="CMS.aspx">CMS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../Billboard.aspx">思维排行榜</a></li>
+                    </ul>
+
+                    <ul class="nav pull-right">
+
+                        <li>
+                            <button id="login" type="button" class="btn btn-primary btn_fix" runat="server" onclick="$('#showModal').click();">登陆</button>
+                            <button id="signUp" type="button" class="btn btn-primary btn_fix" runat="server" onclick="window.location='signUp.aspx';">注册</button>
+                            <button id="home" type="button" class="btn btn-primary btn_fix" runat="server" onclick="window.location='MyHome.aspx';">个人中心</button>
+                            <button id="admin" type="button" class="btn btn-primary btn_fix" runat="server" onclick="window.location='admin.aspx';">功能</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+        </div>
+
+        <!-- /navbar-inner -->
+    </div>
+    <a id="showModal" href="#myModal" role="button" class="btn" data-toggle="modal" style="display: none;">查看演示案例</a>
+    <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 360px!important; height: 428px!important;">
+        <div class="modal-dialog modal-sm">
+            <!--改变模态框的大小时，宽度改此标签的width，高度改下面<iframe>标签的height-->
+            <div class="modal-content">
+                <button class="close" aria-hidden="true" data-dismiss="modal" type="button" style="position: absolute; padding: 10px; right: 0;">×</button>
+                <iframe width="100%" height="384px" frameborder="0" scrolling="no" src="login.aspx"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- /navbar -->
+    <%--=====================================================================================================--%>
+    <div id="main">
+        <div id="placeHolder" style="position: relative; width: auto; height: 70px; background-color: transparent;"></div>
+        <asp:contentplaceholder id="ContentPlaceHolderMain" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    <div style="clear: both"></div>
+    <%--===============================================================--%>
+    <a href="javascript:;" id="backTop" onclick="pageScroll()" style="display: none;"><span class="icon-chevron-up"></span></a>
+    <%--<a href="javascript:;" id="backTop" onclick="pageScroll()" style="display:none;"><span class="glyphicon glyphicon-chevron-up"></span></a>--%>
+    <%--<div id="footer" style="position:static;bottom:0;">
+        
+        <div class="container">
+            <p class="muted credit" style="margin: 10px 0;">
+                <a href="#">关于我们</a><a href="#">联系我们</a><a href="#">商务合作</a><a href="#">友情链接</a><a href="#">网络联盟</a><a href="#">意见反馈</a>
+            </p>
+            <p class="muted credit" style="margin: 20px 0;">
+                <label>商务合作：</label><a href="#">诚募英才</a><a href="#">诚招代理</a><a href="#">招募荣誉顾问团</a>
+            </p>
+        </div>
+    </div>--%>
+
+    <script type="text/javascript" src="layer/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="layer/layer/layer.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap/bootstrap-ie.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript">
+        //更改title
+        var filename = location.href;
+        filename = filename.substr(filename.lastIndexOf('/') + 1);
+        var oldTitle = $("title").html();
+        $("title").html(oldTitle + "_" + filename);
+    </script>
+
+    <asp:contentplaceholder id="ContentPlaceHolderScript" runat="server">
+        <%--新加一个占位符，所有javascript代码和引用都放在文档末尾，可以加快显示速度--%>
+    </asp:contentplaceholder>
+
+
+
+</body>
+</html>

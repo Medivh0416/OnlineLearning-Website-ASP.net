@@ -1,0 +1,27 @@
+﻿
+*{ margin:0 0 0 0px; 
+padding:0;
+}
+
+body {
+   padding-top:70px;
+   padding-bottom:60px;
+}
+
+.carousel_fix {
+    top:230px;
+}
+
+.btn {
+    margin-bottom:5px;
+}
+
+.carousel {
+    margin-bottom:20px;
+}
+.carousel-indicators,.carousel-caption {
+    bottom:0;
+}
+.btn_fix {
+    margin:8px 5px;
+}

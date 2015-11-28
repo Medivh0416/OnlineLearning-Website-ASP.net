@@ -1,0 +1,132 @@
+﻿body {
+    min-width:1170px;
+}
+#head, #ContentPlaceHolderMain_head{
+    height:70px;
+    width:100%;
+    margin:10px 0;
+}
+#left, #ContentPlaceHolderMain_left {
+	float: left;
+	height: 400px;
+	width: 26%;
+    top: 0px;
+    padding:0!important;
+}
+#middle1, #ContentPlaceHolderMain_middle1 {
+	float: left;
+	height: 400px;
+	width:47%;
+	}
+#ContentPlaceHolderMain_yj, #ContentPlaceHolderMain_tj {
+    margin-top:-20px!important;
+    margin-left:20px!important;
+}
+
+
+#right, #ContentPlaceHolderMain_right {
+	float: left;
+	height:807px;
+	width: 275px;
+    position:absolute;
+    left:876px;
+    margin: 0;
+    padding:5px;
+    top:85px;
+
+}
+#left1, #ContentPlaceHolderMain_left1 {
+	float: left;
+	height: 400px;
+	width: 26%;
+    margin:10px 0;
+}
+#middle3, #ContentPlaceHolderMain_middle3 {
+	float: left;
+	height: 400px;
+	width:47%;
+    margin:10px 0;
+	}
+
+#head,#left,#middle,#left1,#middle1,#middle3,#right, #ContentPlaceHolderMain_right, #ContentPlaceHolderMain_head, #ContentPlaceHolderMain_left, #ContentPlaceHolderMain_middle, #ContentPlaceHolderMain_left1, #ContentPlaceHolderMain_middle1, #ContentPlaceHolderMain_middle3{
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #aaa;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-border-radius: 8px; 
+}
+#middle1,#right,#middle3, #ContentPlaceHolderMain_middle1, #ContentPlaceHolderMain_right, #ContentPlaceHolderMain_middle3 {
+    margin-left:10px;
+}
+#container, #ContentPlaceHolderMain_container {
+    position:relative;
+    margin:auto;
+    width:1170px;
+}
+#left, #middle, #left1, #middle1, #middle3,#right, #ContentPlaceHolderMain_left, #ContentPlaceHolderMain_middle, #ContentPlaceHolderMain_left1, #ContentPlaceHolderMain_middle3, #ContentPlaceHolderMain_middle1, #ContentPlaceHolderMain_right{
+   background-color:white;
+   color:black;
+   overflow:auto; 
+}
+#box{ width:400px; height:auto; 
+    font-family:"方正姚体", Geneva, Arial, Helvetica, sans-serif;
+    text-align:center;
+    background-color:#509601;
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+.place-right {
+    position:static;
+    float:right!important;
+}
+
+ p.MsoNormal {
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            font-size: 10.5pt;
+            font-family: "Times New Roman",serif;
+            margin-left: 0cm;
+            margin-right: 0cm;
+            margin-top: 0cm;
+        }
+
+ .effect{ position:relative;}
+	.effect:after, .effect:before{ content:'';
+					background:#fff;
+					position:absolute;
+					top:50%; bottom:0; left:40px; right:40px;
+					box-shadow:0 0 20px rgba(0,0,0,0.8);
+					-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+					-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+					-o-box-shadow:0 0 20px rgba(0,0,0,0.8);
+					border-radius:100px/10px;
+					z-index:-1;}
+
+.icon-comment,.icon-heart,.icon-question-sign {
+    cursor:pointer;
+}
+/*=========================================*/
+#finish {
+    display:none;
+    position:fixed;
+    top:40%;
+    height:auto;
+    left:10%;
+    right:10%;
+    text-align:center;
+}
+
+.time3 {
+    font:inherit;
+}
+/*=================================================*/

@@ -1,0 +1,356 @@
+﻿/* master page*/
+body {
+    padding:0;
+}
+#header, #main, #footer
+{
+	width: 960px;
+	margin: 0 auto;
+}
+#footer
+{
+	text-align: center;
+	font: 14px tahoma,arial, "宋体" ,Helvetica,sans-serif;
+	margin-top: 10px;
+	clear: both;
+}
+#leftList
+{
+	width: 160px;
+	float: left;
+}
+#leftList ul
+{
+	list-style-type: none;
+}
+#rightList
+{
+	width: 800px;
+	height: 100px;
+	float: right;
+}
+.clear
+{
+	height:1px;
+	clear: both;
+}
+/* login form */
+#loginMain
+{
+	/*background: url("../images/loginBack.jpg") no-repeat;*/
+	height: 428px;
+}
+#divLogin
+{
+	/*float: right;*/
+	font: 14px tahoma,arial, "宋体" ,Helvetica,sans-serif;
+	width: 362px;
+	background: #fff;
+	/*border: 1px solid #000;*/
+}
+#divLoginTitle
+{
+	padding-top: 4px;
+}
+#divLoginTitle h3
+{
+	display: block;
+	border-bottom: 1px solid #ddd;
+	height: 61px;
+	line-height: 55px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+.divLoginInput
+{
+	display: inline-block;
+	clear: both;
+	width: 300px;
+	margin: 0 29px 20px;
+	/*overflow: hidden;*/
+	font-size: 16px;
+}
+.divLoginInput .lbl
+{
+	display: block;
+	line-height: 44px;
+	height: 44px;
+	width: 51px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+.divLoginInput .ipt
+{
+	width: 220px;
+}
+.verifyCode
+{
+	width: 130px;
+	float: left;
+
+}
+.ImageVerify
+{
+	width: 60px;
+	height: 25px;
+	padding: 5px 5px;
+}
+#divLoginBtn, #divRegisterBtn
+{
+	text-align: center;
+}
+.btnLogin, .btnRegister
+{
+	border: none;
+	height: 44px;
+	width: 242px;
+	text-align: center;
+    background-color:#5097EF;
+    border-radius:5px;
+	/*background: url("../images/btn_b_bg.jpg") no-repeat;*/
+	font-size: 18px;
+	color: #fff;
+}
+/*MyCourse form*/
+.subjectTitle
+{
+	background-color: Gray;
+}
+.chapterTitle
+{
+	background-color: Yellow;
+	cursor: pointer;
+}
+
+#questionList
+{
+	float: left;
+	height: 150px;
+	width: 400px;
+	overflow: hidden;
+	background: #78BA32;
+	padding: 10px;
+	border: 1px solid #628C1C;
+}
+#questionList a
+{
+	color: #fff;
+}
+#questionList li
+{
+	line-height: 25px;
+}
+
+/* study form */
+#questionHeader
+{
+	font: 1.1em tahoma,arial, "宋体" ,Helvetica,sans-serif;
+	border: 1px solid orange;
+	padding: 5px 5px;
+}
+#ContentPlaceHolderMain_questionName
+{
+	width: 85%;
+	float: left;
+}
+#stopwatch
+{
+	width: 8%;
+	float: right;
+	text-align: right;
+}
+#ContentPlaceHolderMain_questionTitle
+{
+	background-color: Yellow;
+	border: 1px dashed ##000088;
+}
+#ContentPlaceHolderMain_questionFig
+{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#ContentPlaceHolderMain_questionType, #ContentPlaceHolderMain_quesitonQType
+{
+	visibility: hidden;
+}
+.task
+{
+	/*	padding: 2px; 	border: medium dashed #0000FF; 	width: 100%; 	margin: 10px 0px; 	height:auto;*/
+	overflow: auto;
+}
+.taskTitle
+{
+	font-weight: bold;
+}
+.curMissionTitle
+{
+	color: Red;
+	font-weight: bold;
+}
+.missionTitle
+{
+	display:none;	
+}
+.subtTaskTitle
+{
+	clear: both;
+}
+.task1_result
+{
+	width: 100%;
+	clear: both;
+	overflow: visible;
+	list-style-type: decimal;
+}
+.task1_mission1
+{
+	width: 90%;
+	height: auto;
+	min-height: 20px;
+	color: #005aa7;
+	border-bottom: 1px solid #005aa7; /* 下划线效果 */
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	background-color: transparent; /* 背景色透明 */
+	cursor: pointer;
+	float: left;
+}
+.task1_mission2
+{
+	vertical-align: bottom;
+	cursor: pointer;
+}
+.task1_mission2 img
+{
+	float: left;
+}
+.task1_mission2_result
+{
+	display: none;
+	float: left;
+	width: 45%;
+	height: auto;
+	min-height: 20px;
+	color: #008800;
+	border-bottom: 1px solid #005aa7; /* 下划线效果 */
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	background-color: transparent; /* 背景色透明 */
+	margin-left: 5px;
+}
+.subTask1,.subTask2,.subTask4
+{
+	width: 50%;
+	float: left;
+}
+#resultTray1, #resultTray4
+{
+	margin-top: 10px;
+	width: 48%;
+	float: right;
+	border: 2px solid red;
+}
+#resultTray1Title, #resultTray4Title
+{
+	text-align: center;
+	color: Red;
+}
+#ContentPlaceHolderMain_resultTray1Content li, #ContentPlaceHolderMain_resultTray4Content li
+{
+	cursor: pointer;
+	list-style-type: none;
+}
+.resultTraySelectedContent
+{
+	background-color: Yellow;
+}
+.resultTrayMouseOverContent
+{
+	background-color: #EAEAAE;
+}
+.divBtnTray
+{
+	background-color: Gray;
+	text-align: center;
+}
+.btnTray
+{
+	margin: 0px 5px;
+}
+#task2Situation
+{
+	cursor: pointer;
+}
+#task2_statusObjPropertyTitle,#task2_processObjPropertyTitle
+{
+	display:none;
+	font-size:1.2em;
+	font-weight:bolder;
+}
+#task2_statusObjProperty, #task2_processObjProperty
+{
+	width: 100%;
+}
+#task2_statusObjProperty, #task2_statusObjProperty th, #task2_statusObjProperty td
+{
+	border: 1px solid blue;
+}
+#task2_processObjProperty, #task2_processObjProperty th, #task2_processObjProperty td
+{
+	border: 1px solid red;
+}
+.statusProcessColumn
+{
+	width: 60px;
+}
+.ObjectNameColumn
+{
+	width: 60px;
+}
+.task2_1_1_Content,.task2_1_2_Content
+{
+	width: 90%;
+	height: auto;
+	min-height: 20px;
+	color: #005aa7;
+	border-bottom: 1px solid #005aa7; /* 下划线效果 */
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	background-color: transparent; /* 背景色透明 */
+	cursor: pointer;
+	float: left;
+}
+.bltlist li
+{   padding:15px 15px 15px 50px;
+    }
+.task2Fig
+{
+	display:none;
+	text-align:center;
+}
+.task4_Result
+{
+	margin: 5px 5px;
+	clear: both;
+	overflow: hidden;
+	border-bottom: 1px solid #005aa7; /* 下划线效果 */
+	height: 20px;
+	cursor: pointer;
+}
+.task4_Content
+{
+	width: 90%;
+	float: left;
+}
+.task4_Score
+{
+	width: 10%;
+	float: left;
+	text-align: right;
+	color: Red;
+}
